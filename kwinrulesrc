@@ -1,0 +1,182 @@
+[004c4685-c638-44d9-b015-c934bf53aea2]
+Description=Application Settings for Zoom
+opacityactive=85
+opacityactiverule=2
+opacityinactive=85
+opacityinactiverule=2
+wmclass=zoom
+wmclasscomplete=true
+wmclassmatch=3
+
+[066657be-3095-41ae-a614-8ee33ef967b4]
+Description=Application settings for steam
+adaptivesync=false
+adaptivesyncrule=2
+clientmachine=localhost
+wmclass=steamwebhelper steam
+wmclasscomplete=true
+wmclassmatch=1
+
+[076a9d30-5700-4253-a405-10c35fe0e4c4]
+Description=Application settings for org.kde.dolphin
+opacityactive=85
+opacityactiverule=2
+opacityinactive=85
+opacityinactiverule=2
+wmclass=dolphin org.kde.dolphin
+wmclasscomplete=true
+wmclassmatch=1
+
+[233d4877-0c86-4e79-bfa6-20d899ae3c6e]
+Description=Application settings for org.gnome.Meld
+opacityactive=85
+opacityactiverule=2
+opacityinactive=85
+opacityinactiverule=2
+wmclass=python3.13 org.gnome.Meld
+wmclasscomplete=true
+wmclassmatch=1
+
+[5e717f79-7142-4eb5-877e-aa854c4cf8b3]
+Description=Application settings for xpackagemanager
+opacityactive=85
+opacityactiverule=2
+opacityinactive=85
+opacityinactiverule=2
+wmclass=xpackagemanager
+wmclassmatch=1
+
+[607710d5-fe95-4e34-b494-64fade09d0e0]
+Description=Application settings for google-chrome
+adaptivesync=false
+adaptivesyncrule=2
+wmclass=\sgoogle-chrome
+wmclasscomplete=true
+wmclassmatch=1
+
+[71da1d31-f62e-4e89-93b4-2a652ba8f1f0]
+Description=Application settings for octopi
+opacityactive=85
+opacityactiverule=2
+opacityinactive=85
+opacityinactiverule=2
+wmclass=octopi
+wmclassmatch=1
+
+[8467b58c-a1e1-4559-9696-32e77b3f6174]
+Description=Application settings for CachyOSHello
+opacityactive=85
+opacityactiverule=2
+opacityinactive=85
+opacityinactiverule=2
+wmclass=cachyos-hello CachyOSHello
+wmclasscomplete=true
+wmclassmatch=1
+
+[86c77aae-440d-428c-b6fd-56351cb283ca]
+Description=Application settings for vesktop
+adaptivesync=false
+adaptivesyncrule=2
+opacityactive=85
+opacityactiverule=2
+opacityinactive=85
+opacityinactiverule=2
+wmclass=vesktop
+wmclassmatch=1
+
+[8b8fe6db-7657-4949-8f67-46433ad678e2]
+Description=Application settings for mpv
+adaptivesync=false
+adaptivesyncrule=2
+wmclass=mpv
+wmclassmatch=1
+
+[93078e4e-539a-4025-9bce-25981edcc3c3]
+Description=Application settings for xyz.xerolinux.xero-toolkit
+opacityactive=85
+opacityactiverule=2
+opacityinactive=85
+opacityinactiverule=2
+wmclass=xero-toolkit xyz.xerolinux.xero-toolkit
+wmclasscomplete=true
+wmclassmatch=1
+
+[98f8dd81-e0d9-4748-aefb-1469545153e9]
+Description=Application settings for com.vysp3r.ProtonPlus
+opacityactive=85
+opacityactiverule=2
+opacityinactive=85
+opacityinactiverule=2
+wmclass=protonplus com.vysp3r.ProtonPlus
+wmclasscomplete=true
+wmclassmatch=1
+
+[General]
+count=20
+rules=98f8dd81-e0d9-4748-aefb-1469545153e9,bfbcf8bd-4482-4059-97ea-1a84f0b55f33,607710d5-fe95-4e34-b494-64fade09d0e0,ffe54441-9122-46e0-b300-1c6459d8f987,5e717f79-7142-4eb5-877e-aa854c4cf8b3,ab23f07a-dd1e-429f-b619-ef3af3b4b0b5,d480daa5-ca9f-468a-a1f5-eb12b1773f13,8b8fe6db-7657-4949-8f67-46433ad678e2,ca879877-05d2-418c-ad06-812a726e79c5,93078e4e-539a-4025-9bce-25981edcc3c3,aabb1361-2267-4078-b973-91989311aac1,233d4877-0c86-4e79-bfa6-20d899ae3c6e,71da1d31-f62e-4e89-93b4-2a652ba8f1f0,066657be-3095-41ae-a614-8ee33ef967b4,ea2e093e-c484-4414-819e-f176c6f31464,8467b58c-a1e1-4559-9696-32e77b3f6174,b5ca3e21-55e5-4000-97f9-41a49398449e,076a9d30-5700-4253-a405-10c35fe0e4c4,86c77aae-440d-428c-b6fd-56351cb283ca,004c4685-c638-44d9-b015-c934bf53aea2
+
+[aabb1361-2267-4078-b973-91989311aac1]
+Description=Application settings for kcm_kwinrules
+opacityactive=85
+opacityactiverule=2
+opacityinactive=85
+opacityinactiverule=2
+wmclass=kcmshell6 kcm_kwinrules
+wmclasscomplete=true
+wmclassmatch=1
+
+[ab23f07a-dd1e-429f-b619-ef3af3b4b0b5]
+Description=Application settings for virt-manager
+adaptivesync=false
+adaptivesyncrule=2
+wmclass=python3.14 virt-manager
+wmclasscomplete=true
+wmclassmatch=1
+
+[b5ca3e21-55e5-4000-97f9-41a49398449e]
+Description=Application settings for systemsettings
+opacityactive=85
+opacityactiverule=2
+opacityinactive=85
+opacityinactiverule=2
+wmclass=systemsettings
+wmclassmatch=1
+
+[bfbcf8bd-4482-4059-97ea-1a84f0b55f33]
+Description=Application settings for steam_app_489830
+adaptivesync=false
+adaptivesyncrule=2
+clientmachine=localhost
+wmclass=steam_app_489830
+wmclassmatch=1
+
+[ca879877-05d2-418c-ad06-812a726e79c5]
+Description=Application settings for org.kde.gwenview
+adaptivesync=false
+adaptivesyncrule=2
+wmclass=gwenview org.kde.gwenview
+wmclasscomplete=true
+wmclassmatch=1
+
+[d480daa5-ca9f-468a-a1f5-eb12b1773f13]
+Description=Application settings for org.kde.spectacle
+adaptivesync=false
+adaptivesyncrule=2
+wmclass=spectacle org.kde.spectacle
+wmclasscomplete=true
+wmclassmatch=1
+
+[ea2e093e-c484-4414-819e-f176c6f31464]
+Description=Application settings for org.kde.plasmashell
+opacityactive=85
+opacityactiverule=2
+wmclass=plasmashell org.kde.plasmashell
+wmclasscomplete=true
+wmclassmatch=1
+
+[ffe54441-9122-46e0-b300-1c6459d8f987]
+Description=Application settings for floorp
+adaptivesync=false
+adaptivesyncrule=2
+wmclass=floorp
+wmclassmatch=1

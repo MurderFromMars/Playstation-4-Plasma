@@ -1,0 +1,399 @@
+/* ---------------------------------------------------------
+ * CyberXero – Full Libadwaita Override Theme
+ * Palette: strictly 4 colours only
+ *   #00052E  background
+ *   #FFFFFF  main text
+ *   #0047AB  main accent
+ *   #A8B8CC  secondary text / borders
+ * --------------------------------------------------------- */
+
+/* ---------- Core Palette ---------- */
+@define-color cx-bg            #00052E;
+@define-color cx-bg-alt        #00052E;
+@define-color cx-accent        #0047AB;
+@define-color cx-focus         #0047AB;
+@define-color cx-active        #0047AB;
+@define-color cx-active-alt    #FFFFFF;
+@define-color cx-inactive      #A8B8CC;
+@define-color cx-link          #0047AB;
+@define-color cx-link-visited  #A8B8CC;
+@define-color cx-positive      #A8B8CC;
+@define-color cx-neutral       #A8B8CC;
+@define-color cx-negative      #0047AB;
+@define-color cx-selection-bg  #0047AB;
+@define-color cx-selection-alt #0047AB;
+@define-color cx-selection-fg  #FFFFFF;
+@define-color cx-tooltip-bg    #00052E;
+@define-color cx-tooltip-fg    #FFFFFF;
+@define-color cx-header-bg     #00052E;
+@define-color cx-header-fg     #A8B8CC;
+@define-color cx-border        #A8B8CC;
+@define-color cx-border-dim    #A8B8CC;
+
+/* ---------------------------------------------------------
+ * LIBADWAITA INTERNAL COLOR VARIABLES
+ * --------------------------------------------------------- */
+@define-color window_bg_color           #00052E;
+@define-color window_fg_color           #FFFFFF;
+@define-color view_bg_color             #00052E;
+@define-color view_fg_color             #FFFFFF;
+@define-color card_bg_color             #00052E;
+@define-color card_fg_color             #A8B8CC;
+@define-color popover_bg_color          #00052E;
+@define-color popover_fg_color          #FFFFFF;
+@define-color sidebar_bg_color          #00052E;
+@define-color sidebar_fg_color          #A8B8CC;
+@define-color sidebar_border_color      #A8B8CC;
+@define-color headerbar_bg_color        #00052E;
+@define-color headerbar_fg_color        #A8B8CC;
+@define-color headerbar_border_color    #A8B8CC;
+@define-color headerbar_shade_color     rgba(0,0,0,0.4);
+@define-color accent_bg_color           #0047AB;
+@define-color accent_fg_color           #FFFFFF;
+@define-color accent_color              #0047AB;
+@define-color destructive_bg_color      #0047AB;
+@define-color destructive_fg_color      #FFFFFF;
+@define-color destructive_color         #0047AB;
+@define-color success_bg_color          #0047AB;
+@define-color success_fg_color          #FFFFFF;
+@define-color success_color             #A8B8CC;
+@define-color warning_bg_color          #0047AB;
+@define-color warning_fg_color          #FFFFFF;
+@define-color warning_color             #A8B8CC;
+@define-color error_bg_color            #0047AB;
+@define-color error_fg_color            #FFFFFF;
+@define-color error_color               #0047AB;
+@define-color thumbnail_bg_color        #00052E;
+@define-color thumbnail_fg_color        #FFFFFF;
+@define-color shade_color               rgba(0,0,0,0.35);
+@define-color scrollbar_outline_color   #A8B8CC;
+
+/* ---------------------------------------------------------
+ * GLOBAL
+ * --------------------------------------------------------- */
+*,
+window,
+window.background,
+window > *,
+.background,
+.background > * {
+    background-color: @cx-bg;
+    color: @cx-active-alt;
+}
+
+*:disabled {
+    color: @cx-inactive;
+}
+
+/* ---------------------------------------------------------
+ * COMPOSITING / LAYOUT CONTAINERS — MUST BE TRANSPARENT
+ * --------------------------------------------------------- */
+overlay,
+revealer,
+revealer > *:not(.sidebar):not(.background) {
+    background-color: transparent;
+}
+
+/* ---------------------------------------------------------
+ * SPINNERS, IMAGES & ANIMATED WIDGETS
+ * --------------------------------------------------------- */
+spinner,
+spinner *,
+.spinner,
+image,
+image *,
+picture,
+picture * {
+    background-color: transparent;
+    color: @cx-active-alt;
+    opacity: 1;
+}
+
+/* ---------------------------------------------------------
+ * TEXTVIEW
+ * --------------------------------------------------------- */
+textview,
+textview > text,
+textview text {
+    background-color: @cx-bg;
+    color: @cx-active-alt;
+}
+
+/* ---------------------------------------------------------
+ * CONTENT PANE / MAIN VIEW AREA
+ * --------------------------------------------------------- */
+.view,
+viewport,
+scrolledwindow > viewport,
+scrolledwindow viewport > *,
+stack > *,
+leaflet > *,
+leaflet stack > *,
+.content,
+.main-page,
+clamp > *,
+adw-navigation-page,
+adw-navigation-page > *,
+AdwNavigationPage,
+AdwNavigationPage > *,
+AdwNavigationView,
+AdwNavigationView > *,
+AdwToolbarView,
+AdwToolbarView > *,
+.adw-navigation-view,
+.navigation-view,
+.content-pane,
+.page {
+    background-color: @cx-bg;
+    color: @cx-active-alt;
+}
+
+/* ---------------------------------------------------------
+ * HEADERBAR
+ * --------------------------------------------------------- */
+headerbar,
+headerbar.default-decoration,
+.titlebar {
+    background-color: @cx-header-bg;
+    color: @cx-header-fg;
+    border-bottom: 1px solid @cx-border;
+    box-shadow: none;
+}
+
+headerbar button.titlebutton:hover {
+    background-color: alpha(@cx-focus, 0.25);
+}
+
+/* ---------------------------------------------------------
+ * BUTTONS
+ * --------------------------------------------------------- */
+button {
+    background-color: @cx-bg;
+    color: @cx-active-alt;
+    border: 1px solid @cx-border-dim;
+    border-radius: 6px;
+}
+
+button:hover {
+    background-color: @cx-accent;
+    color: @cx-active-alt;
+    border-color: @cx-border;
+}
+
+button:active,
+button:checked {
+    background-color: @cx-accent;
+    color: @cx-selection-fg;
+    border-color: @cx-border;
+}
+
+button.suggested-action {
+    background-color: @cx-accent;
+    color: @cx-active-alt;
+}
+
+button.destructive-action {
+    background-color: @cx-accent;
+    color: @cx-active-alt;
+}
+
+/* ---------------------------------------------------------
+ * ENTRY / SEARCH
+ * --------------------------------------------------------- */
+entry,
+searchentry {
+    background-color: @cx-bg;
+    color: @cx-active-alt;
+    border: 1px solid @cx-border-dim;
+    border-radius: 4px;
+}
+
+entry:focus,
+searchentry:focus {
+    border-color: @cx-focus;
+    box-shadow: 0 0 0 2px alpha(@cx-focus, 0.4);
+}
+
+/* ---------------------------------------------------------
+ * SCROLLBARS
+ * --------------------------------------------------------- */
+scrollbar slider {
+    background-color: @cx-inactive;
+    border-radius: 999px;
+}
+
+scrollbar slider:hover {
+    background-color: @cx-accent;
+}
+
+/* ---------------------------------------------------------
+ * SELECTIONS
+ * --------------------------------------------------------- */
+selection,
+text selection,
+listview row:selected,
+treeview row:selected {
+    background-color: @cx-selection-bg;
+    color: @cx-selection-fg;
+}
+
+/* ---------------------------------------------------------
+ * LINKS
+ * --------------------------------------------------------- */
+*:link {
+    color: @cx-link;
+}
+
+*:visited {
+    color: @cx-link-visited;
+}
+
+*:link:hover,
+*:visited:hover {
+    color: @cx-active-alt;
+}
+
+/* ---------------------------------------------------------
+ * TOOLTIP
+ * --------------------------------------------------------- */
+tooltip {
+    background-color: @cx-tooltip-bg;
+    color: @cx-tooltip-fg;
+    border: 1px solid @cx-border;
+}
+
+/* ---------------------------------------------------------
+ * CHECKS & RADIOS
+ * --------------------------------------------------------- */
+checkbutton check,
+radiobutton radio {
+    border: 1px solid @cx-border-dim;
+    background-color: @cx-bg;
+}
+
+checkbutton check:checked,
+radiobutton radio:checked {
+    background-color: @cx-accent;
+    border-color: @cx-border;
+}
+
+/* ---------------------------------------------------------
+ * PROGRESS / SLIDERS
+ * --------------------------------------------------------- */
+progressbar trough,
+scale trough {
+    background-color: @cx-inactive;
+    border-radius: 999px;
+}
+
+progressbar progress,
+scale highlight {
+    background-color: @cx-accent;
+    border-radius: 999px;
+}
+
+/* ---------------------------------------------------------
+ * LISTS
+ * --------------------------------------------------------- */
+listview,
+listview > *,
+listview row {
+    background-color: @cx-bg;
+    color: @cx-active-alt;
+}
+
+listview row:selected {
+    background-color: @cx-selection-alt;
+    color: @cx-selection-fg;
+    border-left: 2px solid @cx-border;
+}
+
+/* ---------------------------------------------------------
+ * SIDEBAR
+ * --------------------------------------------------------- */
+.sidebar,
+.navigation-sidebar,
+.navigation-sidebar > *,
+.navigation-sidebar row,
+.navigation-sidebar row > * {
+    background-color: @cx-bg !important;
+    color: @cx-active-alt !important;
+}
+
+.navigation-sidebar row:selected {
+    background-color: @cx-selection-alt !important;
+    color: @cx-selection-fg !important;
+    border-left: 2px solid @cx-border;
+}
+
+.navigation-sidebar row:hover {
+    background-color: @cx-accent !important;
+    color: @cx-active-alt !important;
+}
+
+/* ---------------------------------------------------------
+ * POPOVERS / MENUS
+ * --------------------------------------------------------- */
+popover,
+popover.background,
+popover > contents,
+popover contents,
+popover menu,
+popover modelbutton {
+    background-color: @cx-bg !important;
+    color: @cx-active-alt !important;
+    border: 1px solid @cx-border !important;
+    box-shadow: 0 0 12px alpha(@cx-border, 0.35);
+}
+
+modelbutton,
+menuitem {
+    background-color: transparent;
+    color: @cx-active-alt;
+    border-radius: 4px;
+}
+
+modelbutton:hover,
+menuitem:hover {
+    background-color: @cx-accent;
+    color: @cx-active-alt;
+}
+
+modelbutton:selected,
+menuitem:selected {
+    background-color: @cx-selection-bg;
+    color: @cx-selection-fg;
+}
+
+popover separator,
+menu separator {
+    background-color: @cx-border-dim;
+    min-height: 1px;
+}
+
+headerbar popover,
+headerbar popover.background {
+    background-color: @cx-bg !important;
+    border: 1px solid @cx-border !important;
+}
+
+/* ---------------------------------------------------------
+ * CARDS (AdwActionRow, AdwPreferencesGroup, etc.)
+ * --------------------------------------------------------- */
+.card,
+.boxed-list,
+.boxed-list > row,
+row.activatable {
+    background-color: @cx-bg;
+    color: @cx-active-alt;
+}
+
+row.activatable:hover {
+    background-color: @cx-accent;
+    color: @cx-active-alt;
+}
+
+/* ---------------------------------------------------------
+ * IMPORT USER COLORS
+ * --------------------------------------------------------- */
+@import 'colors.css';
