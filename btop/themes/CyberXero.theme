@@ -1,0 +1,63 @@
+# Main background, empty for terminal default, need to be empty if you want transparent background
+theme[main_bg]="#00052E"
+# Main text color
+theme[main_fg]="#FFFFFF"
+# Title color for boxes
+theme[title]="#FFFFFF"
+# Highlight color for keyboard shortcuts
+theme[hi_fg]="#0047AB"
+# Background color of selected item in processes box
+theme[selected_bg]="#0047AB"
+# Foreground color of selected item in processes box
+theme[selected_fg]="#FFFFFF"
+# Color of inactive/disabled text
+theme[inactive_fg]="#A8B8CC"
+# Color of text appearing on top of graphs, i.e uptime and current network graph scaling
+theme[graph_text]="#FFFFFF"
+# Background color of the percentage meters
+theme[meter_bg]="#A8B8CC"
+# Misc colors for processes box including mini cpu graphs, details memory graph and details status text
+theme[proc_misc]="#A8B8CC"
+# CPU, Memory, Network, Proc box outline colors
+theme[cpu_box]="#A8B8CC"
+theme[mem_box]="#A8B8CC"
+theme[net_box]="#A8B8CC"
+theme[proc_box]="#A8B8CC"
+# Box divider line and small boxes line color
+theme[div_line]="#A8B8CC"
+# Temperature graph color
+theme[temp_start]="#A8B8CC"
+theme[temp_mid]="#0047AB"
+theme[temp_end]="#FFFFFF"
+# CPU graph colors
+theme[cpu_start]="#A8B8CC"
+theme[cpu_mid]="#0047AB"
+theme[cpu_end]="#FFFFFF"
+# Mem/Disk free meter
+theme[free_start]="#A8B8CC"
+theme[free_mid]="#0047AB"
+theme[free_end]="#FFFFFF"
+# Mem/Disk cached meter
+theme[cached_start]="#A8B8CC"
+theme[cached_mid]="#0047AB"
+theme[cached_end]="#FFFFFF"
+# Mem/Disk available meter
+theme[available_start]="#A8B8CC"
+theme[available_mid]="#0047AB"
+theme[available_end]="#FFFFFF"
+# Mem/Disk used meter
+theme[used_start]="#A8B8CC"
+theme[used_mid]="#0047AB"
+theme[used_end]="#FFFFFF"
+# Download graph colors
+theme[download_start]="#A8B8CC"
+theme[download_mid]="#0047AB"
+theme[download_end]="#FFFFFF"
+# Upload graph colors
+theme[upload_start]="#A8B8CC"
+theme[upload_mid]="#0047AB"
+theme[upload_end]="#FFFFFF"
+# Process box color gradient for threads, mem and cpu usage
+theme[process_start]="#A8B8CC"
+theme[process_mid]="#0047AB"
+theme[process_end]="#FFFFFF"
