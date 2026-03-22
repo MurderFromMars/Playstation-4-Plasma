@@ -1,4 +1,4 @@
-# Playstation 4 Plasma — PS4-Inspired KDE Theme
+# Playstation 4 Plasma — PS4 Inspired KDE Theme
 
 **Playstation 4 Plasma** is a PlayStation 4-inspired theme for **KDE Plasma 6** that transforms Plasma into a sleek, dynamic tiling window manager setup with a signature PS4 cobalt aesthetic and productivity-focused workflow enhancements.
 
