@@ -31,8 +31,7 @@
       "type": "host",
       "key": "PC",
       "keyColor": "37",
-      "outputColor": "37",
-      "format": "Asus ROG Strix G16CHR"
+      "outputColor": "37"
     },
     {
       "type": "CPU",
