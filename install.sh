@@ -137,9 +137,13 @@ install_debian_dependencies() {
     log "installing debian dependencies…"
     sudo apt update >/dev/null 2>&1
     sudo apt install -y \
-        git cmake g++ extra-cmake-modules kwin-dev unzip \
+        git cmake g++ extra-cmake-modules qt6-tools-dev kwin-dev unzip \
+        libkf6configwidgets-dev gettext libkf6crash-dev \
+        libkf6globalaccel-dev libkf6kio-dev libkf6service-dev \
+        libkf6notifications-dev libkf6kcmutils-dev libkdecorations3-dev \
+        libxcb-composite0-dev libxcb-randr0-dev libxcb-shm0-dev \
         qt6-base-private-dev qt6-base-dev-tools \
-        libkf6kcmutils-dev libdrm-dev libplasma-dev cava \
+        libdrm-dev libplasma-dev cava \
         kitty fastfetch imagemagick >/dev/null 2>&1
     ok "debian dependencies installed"
 }
