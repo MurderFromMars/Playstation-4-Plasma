@@ -145,6 +145,7 @@ install_debian_dependencies() {
         libkf6globalaccel-dev libkf6kio-dev libkf6service-dev \
         libkf6notifications-dev libkf6kcmutils-dev libkdecorations3-dev \
         libxcb-composite0-dev libxcb-randr0-dev libxcb-shm0-dev \
+        libxcb-res0-dev libxcb-sync-dev \
         qt6-base-private-dev qt6-base-dev-tools \
         libdrm-dev libplasma-dev cava \
         kitty fastfetch imagemagick >/dev/null 2>&1
